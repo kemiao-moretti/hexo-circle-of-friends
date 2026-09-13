@@ -1,3 +1,11 @@
+`Unreleased` 更新说明：
+
+```
+- 🆕 **新增 `hugo-solitude` 友链页抓取规则**：适配 Hugo 版 Solitude 主题（everfu/hugo-solitude）的友链页
+  - 基于 `.cf-friends-name` / `a.cf-friends-link` / `.cf-friends-avatar` 三件套，同时兼容 `item` 与 `card` 两种分组展示
+  - 注意：与 Hexo 版 solitude 主题 HTML 结构不同，两者不可混用同一 theme 名
+```
+
 `v6.0.6` 更新说明：
 
 ```

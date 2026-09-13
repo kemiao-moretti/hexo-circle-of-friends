@@ -13,11 +13,14 @@
 #   - volantis：volantis主题
 #   - Yun：Yun主题
 #   - stellar：stellar主题
+#   - hugo-solitude：Hugo 版 Solitude 主题（everfu/hugo-solitude）
+#     注意：与 Hexo 版 solitude 主题的友链页 HTML 结构不同，切勿混用
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。
 LINK: [
-     { link: "https://www.yyyzyyyz.cn/link/", theme: "butterfly" },  # 友链页地址1，修改为你的友链页地址
-#     { link: "https://noionion.top/link/", theme: "butterfly" }, # 友链页地址2
-    # { link: "https://immmmm.com/about/", theme: "common1" }, # 友链页地址3
+     { link: "https://blog.518339.xyz/links/", theme: "hugo-solitude" },  # 友链页地址1，修改为你的友链页地址
+#     { link: "https://www.yyyzyyyz.cn/link/", theme: "butterfly" },  # 友链页地址2
+#     { link: "https://noionion.top/link/", theme: "butterfly" }, # 友链页地址3
+    # { link: "https://immmmm.com/about/", theme: "common1" }, # 友链页地址4
 #     ...
 ]
 
@@ -29,6 +32,8 @@ LINK: [
 #       link：必填，友链主页地址
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
+# 注意：avatar / link 里若含有 & 符号（如 favicon 服务 URL 的 ?client=...&type=...&size=...），
+#       必须用英文双引号包裹整条字符串，否则 YAML 会把 & 当成锚点导致解析失败。
 SETTINGS_FRIENDS_LINKS: {
     enable: false,
     json_api_or_path: "",

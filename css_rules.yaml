@@ -271,6 +271,21 @@ link_page_rules:
         link: [{ selector: ".card-link", attr: "href" }],
         avatar: [{ selector: ".card-link img", attr: "src" }],
       },
+    hugo-solitude:
+      {
+        author:
+          [
+            { selector: ".cf-friends-name", attr: "text" },
+            { selector: "a.cf-friends-link .flink-item-name", attr: "text" },
+            { selector: "a.cf-friends-link", attr: "title" },
+          ],
+        link: [{ selector: "a.cf-friends-link", attr: "href" }],
+        avatar:
+          [
+            { selector: ".cf-friends-avatar", attr: "src" },
+            { selector: "a.cf-friends-link img", attr: "data-lazy-src" },
+          ],
+      },
     anzhiyu:
       {
         author: [{ selector: ".cf-friends-name", attr: "text" }],
